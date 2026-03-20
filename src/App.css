@@ -17,18 +17,12 @@ button:hover {
 .codeColorLogo {
   font-size: 1.6rem;
   font-weight: bold;
-
-  background: linear-gradient(90deg,
-      #60a5fa,
-      #2563eb,
-      #60a5fa);
+  background: linear-gradient(90deg,#60a5fa,#2563eb,#60a5fa);
   background-size: 200% auto;
-
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-
   animation: shineBlue 3s linear infinite;
 }
 
@@ -36,7 +30,6 @@ button:hover {
   0% {
     background-position: 0% center;
   }
-
   100% {
     background-position: 200% center;
   }
@@ -45,18 +38,12 @@ button:hover {
 .saarthiColorLogo {
   font-size: 1.6rem;
   font-weight: bold;
-
-  background: linear-gradient(90deg,
-      #fde68a,
-      #f59e0b,
-      #fde68a);
+  background: linear-gradient(90deg,#fde68a,#f59e0b,#fde68a);
   background-size: 200% auto;
-
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-
   animation: shineGold 3s linear infinite;
 }
 
@@ -64,7 +51,6 @@ button:hover {
   0% {
     background-position: 0% center;
   }
-
   100% {
     background-position: 200% center;
   }
