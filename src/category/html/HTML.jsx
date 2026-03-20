@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import useFetch from '../../hooks/useFetch'
 import SideBar from '../SideBar'
 import HTMLContent from './HTMLContent'
-let apiKeys = {
-    intro: "https://dummyjson.com/c/d5c8-939c-4870-b288"
-}
+import { htmlCourse } from './htmlData'
 
 export default function HTML() {
     let topics = [
@@ -17,8 +14,7 @@ export default function HTML() {
         { key: "semantic", label: "Semantic HTML" }
     ]
     let [activeIndex, setActiveIndex] = useState(0)
-    let activeTopic = topics[activeIndex].key
-    let { data, loading } = useFetch(apiKeys[activeTopic])
+    let data = htmlCourse[activeIndex]
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" })
     }, [activeIndex])
@@ -28,11 +24,10 @@ export default function HTML() {
             <div className="col-lg-3 mb-3">
                 <div className="position-sticky top-0">
                     <h5 className="mb-3"><i className="bi bi-filetype-html text-danger"></i> HTML Topics</h5>
-                    <SideBar topics={topics} active={activeTopic} onSelect={(key) => setActiveIndex(topics.findIndex(t => t.key === key))} />
+                    <SideBar topics={topics} active={topics[activeIndex].key} onSelect={(key) => setActiveIndex(topics.findIndex(t => t.key === key))} />
                 </div>
             </div>
             <div className="col-lg-9">
-                {loading && <p>Loading...</p>}
                 {data && (
                     <>
                         <HTMLContent data={data} />

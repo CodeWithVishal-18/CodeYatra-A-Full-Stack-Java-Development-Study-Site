@@ -1,10 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../hooks/ThemeContext";
 
 export default function HTMLContent({ data }) {
     let { theme } = useContext(ThemeContext);
     let [selected, setSelected] = useState({});
     let [submitted, setSubmitted] = useState(false);
+    useEffect(() => {
+        setSelected({});
+        setSubmitted(false);
+    }, [data]);
 
     let [copiedIndex, setCopiedIndex] = useState(null);
 
@@ -47,7 +51,7 @@ export default function HTMLContent({ data }) {
                             <p className="fw-semibold">{index + 1}. {q.question}</p>
                             {q.options.map((opt, i) => (
                                 <div key={i}>
-                                    <input type="radio" name={`q${index}`} value={opt} onChange={() => setSelected({ ...selected, [index]: opt })} />{" "}
+                                    <input type="radio" name={`q${index}`} value={opt} checked={selected[index] === opt} onChange={() => setSelected({ ...selected, [index]: opt })} />
                                     {opt}
                                 </div>
                             ))}
