@@ -17,7 +17,7 @@ button:hover {
 .codeColorLogo {
   font-size: 1.6rem;
   font-weight: bold;
-  background: linear-gradient(90deg,#60a5fa,#2563eb,#60a5fa);
+  background: linear-gradient(90deg, #60a5fa, #2563eb, #60a5fa);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -30,6 +30,7 @@ button:hover {
   0% {
     background-position: 0% center;
   }
+
   100% {
     background-position: 200% center;
   }
@@ -38,7 +39,7 @@ button:hover {
 .saarthiColorLogo {
   font-size: 1.6rem;
   font-weight: bold;
-  background: linear-gradient(90deg,#fde68a,#f59e0b,#fde68a);
+  background: linear-gradient(90deg, #fde68a, #f59e0b, #fde68a);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -51,7 +52,48 @@ button:hover {
   0% {
     background-position: 0% center;
   }
+
   100% {
     background-position: 200% center;
+  }
+}
+
+.custom-card {
+  max-width: 500px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  position: relative;
+  display: inline-block;
+}
+
+.pulse-ring {
+  content: '';
+  width: 80px;
+  height: 80px;
+  background: rgba(13, 110, 253, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
   }
 }

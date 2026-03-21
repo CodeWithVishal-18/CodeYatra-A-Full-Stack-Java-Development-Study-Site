@@ -25,11 +25,11 @@ export default function Home() {
           </div>
         </div>
         <div className="col-12 col-md-6 col-lg-3 mb-2">
-          <div className="card h-100 shadow-sm" style={{ cursor: "pointer" }} onClick={() => navigate("/sqlcheatsheet")}>
+          <div className="card h-100 shadow-sm" style={{ cursor: "pointer" }} onClick={() => navigate("/sorryy")}>
             <div className="card-body">
               <div className="d-flex justify-content-between">
                 <h5>Logic Building</h5>
-                <span className="text-success fw-semibold">Active</span>
+                <span className="text-danger">Beta</span>
               </div>
               <p className="text-secondary">Practice logical problems, patterns, and output-based questions to strengthen your problem-solving skills and prepare for interviews.</p>
             </div>

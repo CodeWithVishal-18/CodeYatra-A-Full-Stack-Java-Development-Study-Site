@@ -11,7 +11,7 @@ export const SyllabusData = {
       id: 2,
       title: "CSS",
       description: "Style and design beautiful web pages.",
-      route: "/css",
+      route: "/sorryy",
       status: "beta"
     },
     {
@@ -25,7 +25,7 @@ export const SyllabusData = {
       id: 4,
       title: "React",
       description: "Build modern UI using components.",
-      route: "/react",
+      route: "/sorryy",
       status: "beta"
     },
     {
@@ -39,8 +39,8 @@ export const SyllabusData = {
       id: 6,
       title: "Java",
       description: "Backend programming with Java.",
-      route: "/java",
+      route: "/sorryy",
       status: "beta"
     }
   ]
-};
+}
