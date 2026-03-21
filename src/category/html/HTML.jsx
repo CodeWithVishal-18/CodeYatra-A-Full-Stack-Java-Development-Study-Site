@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SideBar from '../SideBar'
-import HTMLContent from './HTMLContent'
+import FrontendContent from '../FrontendContent'
 import { htmlCourse } from './htmlData'
 
 export default function HTML() {
@@ -30,7 +30,7 @@ export default function HTML() {
             <div className="col-lg-9">
                 {data && (
                     <>
-                        <HTMLContent data={data} />
+                        <FrontendContent data={data} />
                         <div className="d-flex justify-content-between border-top pt-4 mt-5 mb-3">
                             <button className="btn btn-outline-secondary" disabled={activeIndex === 0} onClick={() => setActiveIndex(prev => prev - 1)} > <i className="bi bi-chevron-double-left"></i> Previous </button>
                             <span className="text-secondary"> {activeIndex + 1} / {topics.length} </span>

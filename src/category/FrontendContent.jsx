@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../hooks/ThemeContext";
+import { ThemeContext } from "../hooks/ThemeContext";
 
-export default function HTMLContent({ data }) {
+export default function FrontendContent({ data }) {
     let { theme } = useContext(ThemeContext);
     let [selected, setSelected] = useState({});
     let [submitted, setSubmitted] = useState(false);
@@ -77,5 +77,5 @@ export default function HTMLContent({ data }) {
                 </div>
             )}
         </>
-    );
+    )
 }

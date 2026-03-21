@@ -19,7 +19,7 @@ export const SyllabusData = {
       title: "JavaScript",
       description: "Make your websites interactive.",
       route: "/javascript",
-      status: "beta"
+      status: "active"
     },
     {
       id: 4,
