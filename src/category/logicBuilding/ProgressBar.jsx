@@ -9,7 +9,7 @@ export default function ProgressBar({ steps, activeStep, setActiveStep }) {
                     <div className="flex-grow-1 mx-2" style={{ height: "2px", background: "#ccc" }}></div>
                     <div 
                         onClick={() => setActiveStep(step.key)} 
-                        className={`px-3 py-1 rounded-pill ${activeStep === step.key ? "bg-success text-white" : "border border-2 border-danger ${theme=== dark?text-light:text-dark}"}`} 
+                        className={`px-3 py-1 rounded-pill ${activeStep === step.key ? "bg-success text-white" : "border border-2 border-danger {theme=== dark?text-light:text-dark}"}`} 
                         style={{ cursor: "pointer", whiteSpace: "nowrap" }}>
                         {step.label}
                     </div>
