@@ -3,7 +3,7 @@ export let logicBuildingData = [
         "id": 1,
         "title": "Determine Whether a Person is Eligible to Vote",
         "difficulty": "Easy",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Given a person's age, determine whether they are eligible to vote.",
 
         "input": "An integer age",
@@ -26,7 +26,7 @@ export let logicBuildingData = [
         "id": 2,
         "title": "Check Whether a Number is Even or Odd",
         "difficulty": "Easy",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Given an integer, determine whether it is even or odd.",
 
         "input": "An integer n",
@@ -49,7 +49,7 @@ export let logicBuildingData = [
         "id": 3,
         "title": "Find the Largest Among Two Numbers",
         "difficulty": "Easy",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Given two numbers, determine which one is greater.",
 
         "input": "Two integers a and b",
@@ -72,7 +72,7 @@ export let logicBuildingData = [
         "id": 4,
         "title": "Find the Largest Among Three Numbers",
         "difficulty": "Easy",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Given three numbers, determine the largest among them.",
 
         "input": "Three integers a, b, c",
@@ -95,7 +95,7 @@ export let logicBuildingData = [
         "id": 5,
         "title": "Check Whether a Year is a Leap Year",
         "difficulty": "Medium",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Determine whether a given year is a leap year.",
 
         "input": "An integer year",
@@ -118,7 +118,7 @@ export let logicBuildingData = [
         "id": 6,
         "title": "Determine Student Grade Based on Marks",
         "difficulty": "Easy",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Assign grade based on marks.",
 
         "input": "An integer marks",
@@ -141,7 +141,7 @@ export let logicBuildingData = [
         "id": 7,
         "title": "Check Whether a Number is Positive, Negative, or Zero",
         "difficulty": "Easy",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Determine whether a number is positive, negative, or zero.",
 
         "input": "An integer n",
@@ -164,7 +164,7 @@ export let logicBuildingData = [
         "id": 8,
         "title": "Calculate Discount Based on Purchase Amount",
         "difficulty": "Medium",
-        "category": "If-Else",
+        "category": "if-else",
         "description": "Calculate discount based on purchase amount.",
 
         "input": "An integer amount",

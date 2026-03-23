@@ -97,3 +97,11 @@ button:hover {
     opacity: 0;
   }
 }
+
+.progress-step {
+  transition: 0.2s ease;
+}
+
+.progress-step:hover {
+  transform: scale(1.05);
+}
