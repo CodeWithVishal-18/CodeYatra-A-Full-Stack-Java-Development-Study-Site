@@ -1,4 +1,4 @@
-# 🚀 CodeYatra – Learn Full Stack Java Step by Step
+# 🚀 CodeSaarthi – Learn Full Stack Java Step by Step
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge\&logo=react)
 ![Bootstrap](https://img.shields.io/badge/UI-Bootstrap-purple?style=for-the-badge\&logo=bootstrap)
@@ -11,7 +11,7 @@
 ## 👋 About the Project
 
 Hey! 👋
-I built **CodeYatra** to make learning **Full Stack Java Development** simple and structured.
+I built **CodeSaarthi** to make learning **Full Stack Java Development** simple and structured.
 
 Instead of jumping randomly between topics, this platform gives you a **clear path** — just follow step by step and grow 🚀
 
@@ -65,7 +65,7 @@ HTML → CSS → JavaScript → React → SQL → Java → Spring Boot
 
 ```bash id="run123"
 git clone https://github.com/your-username/codeyatra.git
-cd codeyatra
+cd codesaarthi
 npm install
 npm start
 ```
@@ -101,7 +101,7 @@ While building this, I improved my skills in:
 
 ## 🚀 Future Plans
 
-I’m actively working on improving CodeYatra and planning to add:
+I’m actively working on improving CodeSaarthi and planning to add:
 
 * 📚 Add content for more sections:
   * HTML, CSS, JavaScript, React, Java, Spring Boot
@@ -154,4 +154,4 @@ If you found this helpful:
 
 This project is part of my journey to become a **Full Stack Developer**.
 
-> 🚀 Goal: Make CodeYatra a complete platform for learning + practice + revision in one place.
+> 🚀 Goal: Make CodeSaarthi a complete platform for learning + practice + revision in one place.

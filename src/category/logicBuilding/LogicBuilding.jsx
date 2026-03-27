@@ -15,7 +15,7 @@ export default function LogicBuilding() {
     return (
         <div className="container py-4">
             <h2 className="fw-bold mb-2"><i className="bi bi-lightbulb-fill text-warning"></i> Logic Building</h2>
-            <p className="text-secondary">Practice logical problems and improve your thinking step by step.</p>
+            <p className="text-secondary">Practice logical problems and improve your thinking and ability to solve complex problem step by step.</p>
             <ProgressBar steps={steps} activeStep={activeStep} setActiveStep={setActiveStep} />
 
             <div className="mt-4">
