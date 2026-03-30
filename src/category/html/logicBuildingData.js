@@ -371,5 +371,40 @@ if(isPrime && N > 1) {
             "options": ["1 and itself", "All numbers", "Even numbers"],
             "answer": "1 and itself"
         }
+    },
+    {
+        "id": 16,
+        "title": "Right-Angled Triangle Star Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a right-angled triangle pattern using '*' where each row contains stars equal to the row number.",
+
+        "input": "An integer n",
+        "output": "Print star pattern",
+        "examples": [
+            { "input": "5", "output": `
+                *
+                * *
+                * * *
+                * * * *
+                * * * * *` }
+        ],
+        "constraints": ["1 <= n <= 50"],
+
+        "solution": `for (let i = 1; i <= n; i++) {
+  let row = "";
+
+  for (let j = 1; j <= i; j++) {
+    row += "* ";
+  }
+
+  console.log(row);
+}`,
+
+        "unlockQuestion": {
+            "question": "What does inner loop control?",
+            "options": ["Rows", "Columns", "Conditions"],
+            "answer": "Columns"
+        }
     }
 ]
