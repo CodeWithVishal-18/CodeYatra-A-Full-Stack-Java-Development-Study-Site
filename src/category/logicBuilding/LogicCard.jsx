@@ -72,7 +72,7 @@ export default function LogicCard({ problem }) {
                         </div>
 
                         {!showSolution && !showUnlock && (
-                            <button className="btn btn-outline-primary mt-2" onClick={() => setShowUnlock(true)} > View Solution 🔒 </button>
+                            <button className="btn btn-outline-primary mt-2" onClick={() => setShowUnlock(true)} > View Solution <i className="bi bi-shield-lock-fill text-warning"></i> </button>
                         )}
 
                         {showUnlock && problem?.unlockQuestion && (
