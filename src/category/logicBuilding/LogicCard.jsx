@@ -50,7 +50,7 @@ export default function LogicCard({ problem }) {
                                 problem.examples.map((ex, i) => (
                                     <div key={i} className={`p-2 rounded mb-2 ${theme === "dark" ? "bg-black" : "bg-light border"}`} >
                                         <p className="mb-1"><strong>Input:</strong> {ex.input}</p>
-                                        {ex.category==="pattern"?(<p className="mb-0"><strong>Output:</strong> {ex.output}</p>):(<div className="mb-0"><strong>Output:</strong> <pre><code>{ex.output}</code></pre></div>)}
+                                        <div><strong>Output:</strong> <pre><code>{ex.output}</code></pre></div>
                                     </div>
                                 ))
                             ) : (

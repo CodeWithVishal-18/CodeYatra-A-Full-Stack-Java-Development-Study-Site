@@ -382,24 +382,24 @@ if(isPrime && N > 1) {
         "input": "An integer n",
         "output": "Print star pattern",
         "examples": [
-            { "input": "5", "output": `
-                *
-                * *
-                * * *
-                * * * *
-                * * * * *` }
+            {
+                "input": "5",
+                "output": `*
+* *
+* * *
+* * * *
+* * * * *` }
         ],
         "constraints": ["1 <= n <= 50"],
 
-        "solution": `for (let i = 1; i <= n; i++) {
-  let row = "";
-
-  for (let j = 1; j <= i; j++) {
-    row += "* ";
-  }
-
-  console.log(row);
-}`,
+        "solution": `   static void printPattern(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+    }`,
 
         "unlockQuestion": {
             "question": "What does inner loop control?",
