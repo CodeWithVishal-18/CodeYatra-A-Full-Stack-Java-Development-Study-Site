@@ -406,5 +406,41 @@ if(isPrime && N > 1) {
             "options": ["Rows", "Columns", "Conditions"],
             "answer": "Columns"
         }
+    },
+    {
+        "id": 17,
+        "title": "Incremental Number Triangle Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a triangle pattern where each row contains numbers starting from 1 up to the current row number.",
+
+        "input": "An integer num",
+        "output": "Print number pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5`
+            }
+        ],
+        "constraints": ["1 <= num <= 50"],
+
+        "solution": `static void printPattern(int num){
+    for(int i = 1; i <= num; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print(j + " ");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What does outer loop control?",
+            "options": ["Rows", "Columns", "Values"],
+            "answer": "Rows"
+        }
     }
 ]

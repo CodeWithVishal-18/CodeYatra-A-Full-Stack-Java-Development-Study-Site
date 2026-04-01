@@ -13,7 +13,7 @@ export default function LogicCard({ problem }) {
             setShowSolution(true);
             setShowUnlock(false);
         } else {
-            alert("Wrong answer! Try again.");
+            alert("Wrong answer! Try again.")
         }
     }
     let copyCode = (code) => {
