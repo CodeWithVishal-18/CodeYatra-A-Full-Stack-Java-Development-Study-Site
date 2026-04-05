@@ -442,5 +442,41 @@ if(isPrime && N > 1) {
             "options": ["Rows", "Columns", "Values"],
             "answer": "Rows"
         }
+    },
+    {
+        "id": 18,
+        "title": "Row-Wise Constant Number Triangle Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a triangle pattern where each row contains the same number equal to the row index.",
+
+        "input": "An integer num",
+        "output": "Print number pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5`
+            }
+        ],
+        "constraints": ["1 <= num <= 50"],
+
+        "solution": `static void printPattern(int num){
+    for(int i = 1; i <= num; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What value is printed in each row?",
+            "options": ["Column number", "Row number", "Random number"],
+            "answer": "Row number"
+        }
     }
 ]
