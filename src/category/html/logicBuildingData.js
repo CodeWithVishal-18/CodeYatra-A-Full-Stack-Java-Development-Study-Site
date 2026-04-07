@@ -586,7 +586,7 @@ if(isPrime && N > 1) {
 
         "unlockQuestion": {
             "question": "Why do we use (2*i - 1) in pyramid?",
-            "options": ["To print odd numbers of stars", "To print even numbers", "To reduce spaces"],
+            "options": ["To print odd numbers of stars", "To print even numbers of stars", "To reduce spaces"],
             "answer": "To print odd numbers of stars"
         }
     }
