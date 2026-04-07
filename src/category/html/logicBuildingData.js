@@ -550,5 +550,44 @@ if(isPrime && N > 1) {
             "options": ["Increase", "Decrease", "Remain same"],
             "answer": "Decrease"
         }
+    },
+    {
+        "id": 21,
+        "title": "Centered Pyramid Star Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print a centered pyramid pattern using '*' where stars increase in odd numbers and are aligned with leading spaces.",
+
+        "input": "An integer x",
+        "output": "Print pyramid pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `    *
+   ***
+  *****
+ *******
+*********`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= x - i; j++){
+            System.out.print(" ");
+        }
+        for(int k = 1; k <= 2 * i - 1; k++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "Why do we use (2*i - 1) in pyramid?",
+            "options": ["To print odd numbers of stars", "To print even numbers", "To reduce spaces"],
+            "answer": "To print odd numbers of stars"
+        }
     }
 ]
