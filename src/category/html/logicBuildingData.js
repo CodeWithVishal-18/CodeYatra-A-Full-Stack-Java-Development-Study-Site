@@ -625,8 +625,8 @@ if(isPrime && N > 1) {
 
         "unlockQuestion": {
             "question": "What happens to stars in each row?",
-            "options": ["Increase", "Decrease", "Remain same"],
-            "answer": "Decrease"
+            "options": ["Increases", "Decreases", "Remain same"],
+            "answer": "Decreases"
         }
     }
 ]
