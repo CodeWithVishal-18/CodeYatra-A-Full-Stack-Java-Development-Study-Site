@@ -589,5 +589,44 @@ if(isPrime && N > 1) {
             "options": ["To print odd numbers of stars", "To print even numbers of stars", "To reduce spaces"],
             "answer": "To print odd numbers of stars"
         }
+    },
+    {
+        "id": 22,
+        "title": "Inverted Centered Pyramid Star Pattern",
+        "difficulty": "Medium",
+        "category": "pattern",
+        "description": "Print an inverted centered pyramid pattern using '*' where stars decrease in odd numbers and are aligned with leading spaces.",
+
+        "input": "An integer x",
+        "output": "Print inverted pyramid pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `*********
+ *******
+  *****
+   ***
+    *`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = x; i > 0; i--){
+        for(int j = 1; j <= x - i; j++){
+            System.out.print(" ");
+        }
+        for(int k = 1; k <= 2 * i - 1; k++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What happens to stars in each row?",
+            "options": ["Increase", "Decrease", "Remain same"],
+            "answer": "Decrease"
+        }
     }
 ]
