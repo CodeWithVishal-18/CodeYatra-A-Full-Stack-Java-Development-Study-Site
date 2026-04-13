@@ -5,7 +5,7 @@ import useFetch from '../../hooks/useFetch';
 export default function SQLCheatsheat() {
     let { data } = useFetch("https://dummyjson.com/c/3110-b46a-48c3-9f05")
     if (!data) {
-        return <p className="text-center">Loading cheatsheet ...</p>;
+        return <p className="text-center mt-4">Loading cheatsheet ...</p>;
     }
     let copyCode = (text) => {
         navigator.clipboard.writeText(text)
