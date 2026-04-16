@@ -851,5 +851,41 @@ if(isPrime && N > 1) {
             "options": ["To reset every row", "To continue numbering across rows", "To stop loop"],
             "answer": "To continue numbering across rows"
         }
+    },
+    {
+        "id": 28,
+        "title": "Alphabet Incremental Triangle Pattern",
+        "difficulty": "Easy",
+        "category": "pattern",
+        "description": "Print a triangle pattern where each row contains alphabets starting from 'A' up to the current row position.",
+
+        "input": "An integer x",
+        "output": "Print alphabet pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `A
+A B
+A B C
+A B C D
+A B C D E`
+            }
+        ],
+        "constraints": ["1 <= x <= 26"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 0; i <= x - 1; i++){
+        for(char ch = 'A'; ch <= 'A' + i; ch++){
+            System.out.print(ch + " ");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What does 'A' + i represent?",
+            "options": ["Number addition", "Next alphabet using ASCII", "Loop break"],
+            "answer": "Next alphabet using ASCII"
+        }
     }
 ]
