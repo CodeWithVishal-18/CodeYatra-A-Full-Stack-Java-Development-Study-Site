@@ -982,5 +982,63 @@ A`
             "options": ["Two triangles", "Mirror triangles with spaces", "Only pyramid"],
             "answer": "Mirror triangles with spaces"
         }
+    },
+    {
+        "id": 31,
+        "title": "Butterfly Star Pattern (Symmetric Growth)",
+        "difficulty": "Hard",
+        "category": "pattern",
+        "description": "Print a butterfly pattern using '*' where stars increase symmetrically from the top and then decrease, forming a butterfly shape.",
+
+        "input": "An integer x",
+        "output": "Print butterfly pattern",
+        "examples": [
+            {
+                "input": "5",
+                "output": `*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        for(int k = 1; k <= 2 * x - 2 * i; k++){
+            System.out.print(" ");
+        }
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+    for(int i = x - 1; i > 0; i--){
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        for(int k = 1; k <= 2 * x - 2 * i; k++){
+            System.out.print(" ");
+        }
+        for(int j = 1; j <= i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What controls the middle gap in butterfly pattern?",
+            "options": ["j loop", "k loop", "i loop"],
+            "answer": "k loop"
+        }
     }
 ]
