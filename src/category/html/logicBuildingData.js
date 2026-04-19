@@ -1086,5 +1086,52 @@ A`
             "options": ["i == 1 || i == x", "i % 2 == 0", "j < i"],
             "answer": "i == 1 || i == x"
         }
+    },
+    {
+        "id": 33,
+        "title": "Concentric Number Square Pattern",
+        "difficulty": "Hard",
+        "category": "pattern",
+        "description": "Print a square pattern where numbers form concentric layers decreasing from the outer boundary to the center.",
+
+        "input": "An integer x",
+        "output": "Print concentric number square",
+        "examples": [
+            {
+                "input": "4",
+                "output": `4 4 4 4 4 4 4
+4 3 3 3 3 3 4
+4 3 2 2 2 3 4
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4`
+            }
+        ],
+        "constraints": ["1 <= x <= 50"],
+
+        "solution": `static void printPattern(int x){
+    int size = 2 * x - 1;
+
+    for(int i = 0; i < size; i++){
+        for(int j = 0; j < size; j++){
+            int top = i;
+            int left = j;
+            int bottom = size - 1 - i;
+            int right = size - 1 - j;
+
+            int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+
+            System.out.print((x - min) + " ");
+        }
+        System.out.println();
+    }
+}`,
+
+        "unlockQuestion": {
+            "question": "What does Math.min help determine?",
+            "options": ["Maximum value", "Distance from boundary", "Loop count"],
+            "answer": "Distance from boundary"
+        }
     }
 ]
