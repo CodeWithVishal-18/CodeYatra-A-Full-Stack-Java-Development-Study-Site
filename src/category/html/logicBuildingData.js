@@ -1145,12 +1145,11 @@ A`
         "output": "Print alphabet pattern",
         "examples": [
             {
-                "input": "5",
+                "input": "4",
                 "output": `A
 BB
 CCC
-DDDD
-EEEEE`
+DDDD`
             }
         ],
         "constraints": ["1 <= x <= 26"],
