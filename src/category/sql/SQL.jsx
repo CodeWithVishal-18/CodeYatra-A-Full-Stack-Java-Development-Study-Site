@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import SideBar from '../SideBar'
 import FrontendContent from '../FrontendContent'
 import { sqlData } from './sqlData'
 
-export default function SQL() {
+let SQL=memo(() => {
     let topics = [
         { key: "intro", label: "Introduction" },
         { key: "database", label: "Database Basics" },
@@ -47,4 +47,6 @@ export default function SQL() {
             </div>
         </div>
     )
-}
+})
+
+export default SQL;
