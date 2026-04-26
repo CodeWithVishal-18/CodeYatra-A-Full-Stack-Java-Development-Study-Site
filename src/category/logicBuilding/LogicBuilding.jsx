@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { memo, useState } from 'react'
 import { logicBuildingData } from '../html/logicBuildingData';
 import LogicCard from './LogicCard';
 import ProgressBar from './ProgressBar';
 
-export default function LogicBuilding() {
+let LogicBuilding = memo(() => {
     let steps = [
         { key: "if-else", label: "If-Else" },
         { key: "loops", label: "Loops" },
@@ -25,4 +25,6 @@ export default function LogicBuilding() {
             </div>
         </div>
     )
-}
+})
+
+export default LogicBuilding;
