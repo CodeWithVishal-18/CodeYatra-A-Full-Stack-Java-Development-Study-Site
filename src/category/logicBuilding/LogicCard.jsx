@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../../hooks/ThemeContext';
 
-export default function LogicCard({ problem }) {
+let LogicCard=memo(({ problem }) => {
     let { theme } = useContext(ThemeContext);
     let [open, setOpen] = useState(false);
     let [showUnlock, setShowUnlock] = useState(false);
@@ -110,4 +110,6 @@ export default function LogicCard({ problem }) {
             </div>
         </div>
     )
-}
+})
+
+export default LogicCard;
