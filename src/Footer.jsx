@@ -1,7 +1,7 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { ThemeContext } from "./hooks/ThemeContext";
 
-export default function Footer() {
+let Footer = memo(() => {
     let { theme } = useContext(ThemeContext);
     let footerTheme = theme === "dark" ? "bg-dark text-light border-top border-secondary" : "bg-light text-dark border-top";
     return (
@@ -12,4 +12,6 @@ export default function Footer() {
             </a>
         </footer>
     )
-}
+})
+
+export default Footer;
