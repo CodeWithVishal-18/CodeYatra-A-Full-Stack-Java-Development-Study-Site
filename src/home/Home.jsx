@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import SyllabusCard from './SyllabusCard'
 import { useNavigate } from 'react-router-dom'
 import { SyllabusData } from './SyllabusData'
 
-export default function Home() {
+let Home=memo(()=> {
   let navigate = useNavigate()
   return (
     <div className="container py-5">
@@ -49,4 +49,6 @@ export default function Home() {
       </div>
     </div >
   )
-}
+})
+
+export default Home;
