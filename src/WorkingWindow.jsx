@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function WorkingWindow() {
+let WorkingWindow = memo(() => {
     return (
         <div className="container d-flex justify-content-center align-items-center mt-5">
             <div className="card shadow-lg border-0 text-center p-5 custom-card">
@@ -34,4 +34,6 @@ export default function WorkingWindow() {
             </div>
         </div>
     )
-}
+})
+
+export default WorkingWindow;
