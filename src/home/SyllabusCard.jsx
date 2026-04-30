@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export default function SyllabusCard(prop) {
+let SyllabusCard = memo((prop) => {
     let category = prop.categoryArray
     let navigate = useNavigate();
 
@@ -30,4 +30,6 @@ export default function SyllabusCard(prop) {
             }
         </>
     )
-}
+})
+
+export default SyllabusCard;
