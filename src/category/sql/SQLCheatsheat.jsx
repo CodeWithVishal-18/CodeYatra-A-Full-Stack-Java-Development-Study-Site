@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import useFetch from '../../hooks/useFetch';
 
 
-export default function SQLCheatsheat() {
+let SQLCheatsheat=memo(()=> {
     let { data } = useFetch("https://dummyjson.com/c/3110-b46a-48c3-9f05")
     if (!data) {
         return <p className="text-center mt-4">Loading cheatsheet ...</p>;
@@ -43,4 +43,6 @@ export default function SQLCheatsheat() {
 
         </div>
     )
-}
+})
+
+export default SQLCheatsheat;

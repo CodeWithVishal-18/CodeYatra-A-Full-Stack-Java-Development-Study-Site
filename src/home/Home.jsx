@@ -3,7 +3,7 @@ import SyllabusCard from './SyllabusCard'
 import { useNavigate } from 'react-router-dom'
 import { SyllabusData } from './SyllabusData'
 
-let Home=memo(()=> {
+let Home = memo(() => {
   let navigate = useNavigate()
   return (
     <div className="container py-5">
