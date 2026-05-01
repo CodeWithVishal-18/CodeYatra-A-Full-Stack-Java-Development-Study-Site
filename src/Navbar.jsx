@@ -2,7 +2,7 @@ import React, { memo, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ThemeContext } from './hooks/ThemeContext'
 
-let Navbar=memo(()=> {
+let Navbar = memo(() => {
     let { theme, setTheme } = useContext(ThemeContext)
     return (
         <div>
