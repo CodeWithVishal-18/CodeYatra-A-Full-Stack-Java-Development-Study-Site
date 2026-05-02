@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import "./Teacher.css"
 
-export default function TeacherCard() {
+let TeacherCard = memo(() => {
   let teachers = [
     {
       name: "Tejas Kasare",
@@ -19,7 +19,7 @@ export default function TeacherCard() {
       <div className="container py-4 mt-2">
         <div className="row g-4">
           {teachers.map((t, i) => (
-            <a href={t.notesUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", cursor:"pointer"}}>
+            <a href={t.notesUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", cursor: "pointer" }}>
               <div key={i} className="col-12 col-md-6 col-lg-3">
                 <div className="teacher-card">
                   <div className="teacher-inner border border-1">
@@ -40,4 +40,4 @@ export default function TeacherCard() {
       </div>
     </>
   )
-}
+})
