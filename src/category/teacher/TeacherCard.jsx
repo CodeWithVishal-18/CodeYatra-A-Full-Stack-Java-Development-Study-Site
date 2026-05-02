@@ -41,3 +41,5 @@ let TeacherCard = memo(() => {
     </>
   )
 })
+
+export default TeacherCard;
